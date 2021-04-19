@@ -1,3 +1,4 @@
+#newline
 const tape = require('tape')
 const jsonist = require('jsonist')
 
@@ -16,6 +17,7 @@ tape('should respond hello', (t) => {
 })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 tape('should respond user-agent', (t) => {
   const opts = { headers: { 'User-Agent': 'tape' } }
   jsonist.get(`${urlBase}/user-agent`, opts, (err, body) => {
@@ -23,6 +25,8 @@ tape('should respond user-agent', (t) => {
 
     t.equal(body.ua, 'tape')
 =======
+=======
+>>>>>>> ac0efa7 (fiat lux)
 tape('should respond b64', (t) => {
   jsonist.get(`${urlBase}/b64/hello`, (err, body) => {
     if (err) t.error(err)
@@ -33,6 +37,8 @@ tape('should respond b64', (t) => {
   })
 })
 
+=======
+>>>>>>> 085b8a7 (fiat lux)
 tape('cleanup', function (t) {
   server.close()
   t.end()
