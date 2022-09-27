@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 #newline
+=======
+>>>>>>> 085b8a7262fe2ac3d31ff67f8f3af837c6b3c5aa
 const http = require('http')
 
 const PORT = process.env.PORT || 3000
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') return respondHello(req, res)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   if (req.url === '/user-agent') return respondUserAgent(req, res)
@@ -16,6 +20,8 @@ const server = http.createServer((req, res) => {
 =======
 >>>>>>> 085b8a7 (fiat lux)
 >>>>>>> ac0efa7 (fiat lux)
+=======
+>>>>>>> 085b8a7262fe2ac3d31ff67f8f3af837c6b3c5aa
 
   res.end()
 })
@@ -24,6 +30,7 @@ function respondHello (req, res) {
   res.end(JSON.stringify({ msg: 'hello' }))
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function respondUserAgent (req, res) {
@@ -40,6 +47,8 @@ function respondBase64 (req, res) {
 
 =======
 >>>>>>> 085b8a7 (fiat lux)
+=======
+>>>>>>> 085b8a7262fe2ac3d31ff67f8f3af837c6b3c5aa
 server.listen(PORT)
 console.log(`Server listening on port ${PORT}`)
 

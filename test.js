@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #newline
+=======
+>>>>>>> 085b8a7262fe2ac3d31ff67f8f3af837c6b3c5aa
 const tape = require('tape')
 const jsonist = require('jsonist')
 
@@ -16,6 +19,7 @@ tape('should respond hello', (t) => {
   })
 })
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 tape('should respond user-agent', (t) => {
@@ -39,6 +43,8 @@ tape('should respond b64', (t) => {
 
 =======
 >>>>>>> 085b8a7 (fiat lux)
+=======
+>>>>>>> 085b8a7262fe2ac3d31ff67f8f3af837c6b3c5aa
 tape('cleanup', function (t) {
   server.close()
   t.end()
